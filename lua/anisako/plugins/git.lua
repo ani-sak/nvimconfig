@@ -10,7 +10,7 @@ return {
       "tpope/vim-fugitive",
     },
     config = function ()
-      vim.keymap.set("n", "<leader>gl", ":Flog <CR>")
+      vim.keymap.set("n", "<leader>gl", ":Flog -all <CR>")
     end
   },
 }
