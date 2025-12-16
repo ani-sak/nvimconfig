@@ -25,6 +25,7 @@ return {
   config = function ()
     require("rose-pine").setup({
       variant = "main",
+      dim_inactive_windows = true,
       styles = {
         italic = false,
         -- transparency = true,
