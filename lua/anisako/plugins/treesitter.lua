@@ -6,12 +6,13 @@ return
       'nvim-treesitter/nvim-treesitter-textobjects',
     },
     build = ':tsupdate',
+    tag = 'v0.10.0',
     config = function ()
       -- [[ Configure Treesitter ]]
       -- See `:help nvim-treesitter`
       require('nvim-treesitter.configs').setup {
         -- Add languages to be installed here that you want installed for treesitter
-        ensure_installed = { 'c', 'cpp', 'lua', 'python', 'rust', 'tsx', 'javascript', 'vimdoc', 'vim', 'query', 'dart', 'c_sharp'},
+        ensure_installed = { 'c', 'cpp', 'lua', 'python'},
 
         -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
         auto_install = false,
